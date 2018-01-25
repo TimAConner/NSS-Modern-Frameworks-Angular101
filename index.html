@@ -1,14 +1,53 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular 101</title>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 </head>
 <body>
     
-    <script src="/node_modules/angular/angular.min.js"></script>
-    <script src="dist/app.js"></script>
+    <body ng-app="TodoApp">
+            <!-- <input type="number" ng-model="TestModel">
+            <p>There {{count = +TestModel; verb = count === 1 ? "is" : "are"; verb + " " + count}} of them.</p>
+                            
+            <p ng-controller="TestCtrl">
+                Message: {{message}}
+            </p>
+        </div>
+        <p>{{"Angular".toLowerCase() + "js".toUpperCase()}}</p>
+        <p>{{a = 5}}</p>
+        <p>{{a}}</p>
+        
+        <p ng-init="allowed = false"> 
+            <label for="code" >Secret Code: </label>
+            <input id="code" type="number"  ng-model="secretCode">
+            <br/>
+            <label for="trueFalse">Show Code:</label>
+            <input id="trueFalse" type="checkbox" ng-model="allowed">
+            <br/>
+            <button ng-click="allowed = !allowed">{{allowed ? "Hide" : "Show"}}</button>
+            The Secret Code is
+            <span ng-show="allowed">{{secretCode}}</span>
+            <span ng-hide="allowed">not for you to see.</span>
+        </p> -->
+        
+        <h1>Angular 101: Pure Magic</h1>
+        <div ng-view>
+
+        </div>
+
+    </body>
+
+    <script src="main.js"></script>
+    <!-- factories -->
+    <script src="factories/songFactory.js"></script>
+    <!-- controllers -->
+    <script src="controllers/todoCtrl.js"></script>
+    <script src="controllers/songDetailCtrl.js"></script>
+    <script src="controllers/songsCtrl.js"></script>
 </body>
 </html>

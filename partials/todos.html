@@ -1,0 +1,7 @@
+<ul>
+    <li ng-hide="x.completed" ng-repeat="x in todos">
+        <input type="checkbox" ng-model="x.completed">{{x.name}}</input>
+    </li>
+    <button ng-click="printValue()">Click me</button>
+    <input type="text" ng-model="name">
+</ul>
