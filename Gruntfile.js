@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
       browserify: {
         files: {
-          src: 'js/main.js',
+          src: 'app/main.js',
           dest: 'dist/app.js'
         },
         options: {
@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         }
       },
       jshint: {
-        files: ['js/**/*.js'],
+        files: ['app/**/*.js'],
         options: {
           predef: ["document", "console"],
           esnext: true,
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       },
       watch: {
         javascripts: {
-          files: ['js/**/*.js'],
+          files: ['app/**/*.js'],
           tasks: ['jshint', 'browserify']
         },
         hbs: {
